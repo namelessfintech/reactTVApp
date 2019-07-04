@@ -5,7 +5,7 @@ import React from 'react';
 // do not forget the return function
 const Intro = (props) => {
     return <p className="App-intro">
-        My first functional Component modular
+        {props.message}
   </p>
 
 }

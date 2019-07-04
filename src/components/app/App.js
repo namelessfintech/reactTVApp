@@ -1,19 +1,14 @@
 import React from 'react';
 import './App.css';
-import Intro from './components/intro/intro';
-
-
-
-
-
-
-// I need to capitallize all my custom components, lowercase if for simple html elements aka "built in"
-
-
+import Intro from '../intro/intro';
+import Series from '../../containers/series/index';
 
 
 // class based components internally have state
 class App extends React.Component {
+
+
+
   render(){
     return (
       <div className="App">
@@ -21,8 +16,8 @@ class App extends React.Component {
           <h1 className="App-title"> TV Series</h1>
         </header>
         
-        <Intro />
-
+        <Intro message="Here you can find all of your most loved series" />
+        <Series />
       </div>
     )
   }
