@@ -1,4 +1,6 @@
 import React from 'react';
+import SeriesList from '../../components/seriesList/index';
+
 
 class Series extends React.Component {
 
@@ -17,8 +19,12 @@ class Series extends React.Component {
 
     render(){
         return (  
-            <div> The length of my series array: {this.state.series.length}</div>
-   
+            <div> 
+                The length of my series array: {this.state.series.length}
+                <SeriesList list={this.state.series} />
+            </div>
+
+           
         )
     }
 }
