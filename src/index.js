@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/app/App';
+import {BrowserRouter} from 'react-router-dom';
 
 
 
@@ -24,4 +25,9 @@ import App from './components/app/App';
 // ReactDOM.render(greeting,  document.getElementById('root'));
 
 //: I can also render an app component: which can be composition of components
-ReactDOM.render(<App/>,document.getElementById("root"));
+ReactDOM.render(
+<BrowserRouter>
+    <App />
+</BrowserRouter>, 
+document.getElementById("root")
+);
