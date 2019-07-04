@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Intro from './components/intro/intro';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+
+// I need to capitallize all my custom components, lowercase if for simple html elements aka "built in"
+
+
+
+
+// class based components internally have state
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title"> TV Series</h1>
+        </header>
+        
+        <Intro />
+
+      </div>
+    )
+  }
 }
+
 
 export default App;
