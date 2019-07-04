@@ -1,10 +1,14 @@
 import React from 'react'
 import './index.css'
+import {Link} from 'react-router-dom';
 
 // I can further compose even sub components
 const SeriesListItem = ({series}) => (
-     <li > 
-     {series.show.name} 
+     <li >
+        <Link to={`/series/${series.show.id}`}>
+            {series.show.name} 
+        </Link>
+        
      </li>
 )
     
